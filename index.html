@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QQ音乐播放器</title>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/lyric.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <div class="header">
+        <!-- 左上角QQ音乐图标 -->
+        <h1 class="logo">
+            <a href="#"></a>
+        </h1>
+        <!-- 右上角登录设置区域 -->
+        <ul class="register">
+            <li>登录</li>
+            <li>设置</li>
+        </ul>
+    </div>
+
+    <!-- 中部歌曲列表歌曲信息区域 -->
+    <div class="content">
+        <div class="content_in">
+            <!-- 中左部歌曲列表选择区域 -->
+            <div class="content_left">
+                <!-- 中左部顶部歌曲列表操作区域 -->
+                <div class="content_toolbar">
+                    <span><i></i>收藏</span>
+                    <span><i></i>添加到</span>
+                    <span><i></i>下载</span>
+                    <span><i></i>删除</span>
+                    <span><i></i>清空列表</span>
+                </div>
+                <!-- 中左部底部歌曲展示区域 -->
+                <div class="content_list" data-mcs-theme="minimal-dark">
+                    <ul>
+                        <li class="list_title">
+                            <div class="list_check"><i></i></div>
+                            <div class="list_number"></div>
+                            <div class="list_name">歌曲</div>
+                            <div class="list_singer">歌手</div>
+                            <div class="list_time">时长</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 中右部当前播放歌曲信息区域 -->
+            <div class="content_right">
+                <!-- 中右部顶部歌曲相关信息区域 -->
+                <div class="song_info">
+                    <a href="#" class="song_info_pic"><img src="images/lnj.jpg" alt=""></a>
+                    <div class="song_info_name">歌曲名称:
+                        <a href="#"></a>
+                    </div>
+                    <div class="song_info_singer">歌手名:
+                        <a href="#"></a>
+                    </div>
+                    <div class="song_info_ablum">专辑名:
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <!-- 中右部底部歌词展示区域 -->
+                <div class="song_lyric_container">
+                    <ul class="song_lyric">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部播放设置区域 -->
+    <div class="footer">
+        <div class="footer_in">
+            <!-- 上下首播放按钮区域 -->
+            <a href="#" class="music_pre"></a>
+            <a href="#" class="music_play"></a>
+            <a href="#" class="music_next"></a>
+            <!-- 歌曲进度条区域 -->
+            <div class="music_progress_info">
+                <!-- 进度条顶部歌手名字，时长信息区域 -->
+                <div class="music_progress_top">
+                    <span class="music_progress_name"></span>
+                    <span class="music_progress_time"></span>
+                </div>
+                <!-- 进度条拖动区域 -->
+                <div class="music_progress_bar">
+                    <div class="music_progress_line">
+                        <div class="music_progress_dot"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 循环收藏下载评论按钮区域 -->
+            <a href="#" class="music_mode"></a>
+            <a href="#" class="music_fav"></a>
+            <a href="#" class="music_down"></a>
+            <a href="#" class="music_comment"></a>
+            <a href="#" class="music_only"></a>
+            <!-- 音量进度条区域 -->
+            <div class="music_voice_info">
+                <a href="#" class="music_voice_icon"></a>
+                <div class="music_voice_bar">
+                    <div class="music_voice_line">
+                        <div class="music_voice_dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 用专辑图片覆盖整个窗口 -->
+    <div class="mask_bg"></div>
+    <!-- 遮罩层 -->
+    <div class="mask"></div>
+    <!-- 音频引入 -->
+    <audio src=""></audio>
+</body>
+
+</html>
